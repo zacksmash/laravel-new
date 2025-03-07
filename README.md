@@ -1,4 +1,4 @@
-# Laravel new project
+# laravel new project 💾
 
 In the latest version of the [Laravel installer](https://laravel.com/docs/installation#installing-php) developers can pass the `--using` flag to the `laravel new` command to install community submitted projects or starter kits.
 
