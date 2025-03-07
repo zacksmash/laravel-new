@@ -111,17 +111,17 @@ Here are a list of other open source projects that you can use as a starting tem
 
 ### Other open source apps we'll be adding to the list:
 
-Filament - https://github.com/filamentphp/filament
-Koel - https://github.com/koel/koel
-Invoice Shelf - https://github.com/InvoiceShelf/InvoiceShelf
-Coolify - https://github.com/coollabsio/coolify
-Bagisto - https://github.com/bagisto/bagisto
-Akaunting - https://github.com/akaunting/akaunting
-Backpack for Laravel - https://github.com/Laravel-Backpack/demo
-Invoice Ninja - https://github.com/invoiceninja/invoiceninja
-MonicaHQ - https://github.com/monicahq/monica
-Orchid - https://github.com/orchidsoftware/platform
-Snipe IT - https://github.com/snipe/snipe-it
-Pinkary Project - pinkary-project/pinkary.com
-Twill CMS - https://github.com/area17/twill
-Jigsaw - https://github.com/tighten/jigsaw
+ - Filament - https://github.com/filamentphp/filament
+ - Koel - https://github.com/koel/koel
+ - Invoice Shelf - https://github.com/InvoiceShelf/InvoiceShelf
+ - Coolify - https://github.com/coollabsio/coolify
+ - Bagisto - https://github.com/bagisto/bagisto
+ - Akaunting - https://github.com/akaunting/akaunting
+ - Backpack for Laravel - https://github.com/Laravel-Backpack/demo
+ - Invoice Ninja - https://github.com/invoiceninja/invoiceninja
+ - MonicaHQ - https://github.com/monicahq/monica
+ - Orchid - https://github.com/orchidsoftware/platform
+ - Snipe IT - https://github.com/snipe/snipe-it
+ - Pinkary Project - pinkary-project/pinkary.com
+ - Twill CMS - https://github.com/area17/twill
+ - Jigsaw - https://github.com/tighten/jigsaw
