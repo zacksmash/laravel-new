@@ -34,8 +34,8 @@ Below are the list of the [Official Laravel Starter Kits](https://laravel.com/st
 
 The following projects are community submitted starter kits, not associated with Laravel.
 
-> [!WARNING]
-> Be cautious when installing this code into your application. Make sure to do your research and learn more about the project before installing.
+> [!NOTE]
+> Be cautious when installing into your app. Be sure to do your research and learn more about the project before installing.
 
 #### [Svelte Starter Kit](https://github.com/oseughu/svelte-starter-kit) 
 
