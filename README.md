@@ -1,6 +1,6 @@
 # Laravel new project
 
-In the latest Laravel installer developers can pass the `--using` flag to the `laravel new` command to install community submitted projects or starter kits.
+In the latest version of the [Laravel installer](https://laravel.com/docs/installation#installing-php) developers can pass the `--using` flag to the `laravel new` command to install community submitted projects or starter kits.
 
 <img src="https://raw.githubusercontent.com/tnylea/laravel-new/refs/heads/main/screenshot.png" alt="laravel new screenshot" width="100%" height="auto" />
 
