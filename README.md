@@ -8,7 +8,7 @@ In the latest version of the [Laravel installer](https://laravel.com/docs/instal
 
 ## Official Laravel Starter Kits
 
-### [React Starter Kit](https://github.com/laravel/react-starter-kit){:target="_blank" rel="noopener"}
+### [React Starter Kit](https://github.com/laravel/react-starter-kit)
 
 ```
 --using=laravel/react-starter-kit
