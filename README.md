@@ -8,6 +8,8 @@ In the latest version of the [Laravel installer](https://laravel.com/docs/instal
 
 ## Official Laravel Starter Kits
 
+Below are the list of the [Official Laravel Starter Kits](https://laravel.com/starter-kits). These can be installed via the CLI without the need to include the `--using` flag.
+
 ### [React Starter Kit](https://github.com/laravel/react-starter-kit)
 
 ```
