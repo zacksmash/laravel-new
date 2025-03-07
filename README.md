@@ -32,8 +32,7 @@ Below are the list of the [Official Laravel Starter Kits](https://laravel.com/st
 
 ## Community Submited Starter Kits
 
-
-The following projects are community created applications, not associated with Laravel, that can be installed with the `laravel new` command.
+The following projects are community submitted starter kits, not associated with Laravel.
 
 > [!WARNING]
 > Because these projects are created by the community, it's very important to be cautious when installing any application. Make sure to do your research and learn more about the project before installing.
