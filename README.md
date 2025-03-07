@@ -37,7 +37,7 @@ The following projects are community submitted starter kits, not associated with
 > [!WARNING]
 > Because these projects are created by the community, it's very important to be cautious when installing any application. Make sure to do your research and learn more about the project before installing.
 
-#### [Svelte Starter Kit](https://github.com/laravel/livewire-starter-kit) 
+#### [Svelte Starter Kit](https://github.com/oseughu/svelte-starter-kit) 
 
 ```
 --using=oseughu/svelte-starter-kit
@@ -48,3 +48,80 @@ The following projects are community submitted starter kits, not associated with
 ```
 --using=devdojo/wave
 ```
+
+#### [Genesis Starter Kit](https://github.com/thedevdojo/genesis)
+
+```
+--using=thedevoj/genesis
+```
+
+#### [Larasonic](https://github.com/pushpak1300/Larasonic)
+
+```
+--using=pushpak1300/larasonic
+```
+
+#### [TALL Starter](https://github.com/—using=mortenebak/tallstarter)
+
+```
+--using=mortenebak/tallstarter
+```
+
+---
+
+## Blog and CMS Templates
+
+Although the following projects are not starter kits, they can still easily be installed using the Laravel installer. Below are a list of Blog and CMS templates you can use for your next project.
+
+#### [Statamic](https://github.com/statamic/statamic)
+
+```
+--using=statamic/statamic
+```
+
+#### [MicroWeber](https://github.com/microweber/microweber)
+
+```
+--using=microweber/microweber
+```
+
+#### [OctoberCMS](https://github.com/octobercms/october)
+
+```
+--using=octobercms/october
+```
+
+#### [Bookstack](https://github.com/BookStackApp/BookStack)
+
+```
+--using=BookStackApp/BookStack
+```
+
+## Other Templates
+
+Here are a list of other open source projects that you can use as a starting template for your next project.
+
+#### [Cachet](https://github.com/cachethq/cachet)
+
+```
+--using=cachethq/cachet
+```
+
+---
+
+### Other open source apps we'll be adding to the list:
+
+Filament - https://github.com/filamentphp/filament
+Koel - https://github.com/koel/koel
+Invoice Shelf - https://github.com/InvoiceShelf/InvoiceShelf
+Coolify - https://github.com/coollabsio/coolify
+Bagisto - https://github.com/bagisto/bagisto
+Akaunting - https://github.com/akaunting/akaunting
+Backpack for Laravel - https://github.com/Laravel-Backpack/demo
+Invoice Ninja - https://github.com/invoiceninja/invoiceninja
+MonicaHQ - https://github.com/monicahq/monica
+Orchid - https://github.com/orchidsoftware/platform
+Snipe IT - https://github.com/snipe/snipe-it
+Pinkary Project - pinkary-project/pinkary.com
+Twill CMS - https://github.com/area17/twill
+Jigsaw - https://github.com/tighten/jigsaw
