@@ -122,6 +122,6 @@ Here are a list of other open source projects that you can use as a starting tem
  - MonicaHQ - https://github.com/monicahq/monica
  - Orchid - https://github.com/orchidsoftware/platform
  - Snipe IT - https://github.com/snipe/snipe-it
- - Pinkary Project - pinkary-project/pinkary.com
+ - Pinkary Project - https://github.com/pinkary-project/pinkary.com
  - Twill CMS - https://github.com/area17/twill
  - Jigsaw - https://github.com/tighten/jigsaw
