@@ -31,33 +31,79 @@ jobs:
           # Create a script to update the README
           cat > update-readme.js << 'EOF'
           const fs = require('fs');
+          const https = require('https');
 
-          // Read templates.json
-          const templates = JSON.parse(fs.readFileSync('templates.json', 'utf8'));
-          
-          // Read README.md
-          let readme = fs.readFileSync('README.md', 'utf8');
-          
-          // Generate official starter kits list
-          let officialList = '';
-          for (const [name, repo] of Object.entries(templates.official)) {
-            officialList += `- [${name}](https://github.com/${repo}) - \`${repo}\`\n`;
+          // Function to fetch package data from Packagist
+          async function getPackageData(repo) {
+            return new Promise((resolve, reject) => {
+              const url = `https://packagist.org/packages/${repo}.json`;
+              https.get(url, (res) => {
+                let data = '';
+                res.on('data', (chunk) => { data += chunk; });
+                res.on('end', () => {
+                  try {
+                    if (res.statusCode === 200) {
+                      const packageData = JSON.parse(data);
+                      resolve(packageData);
+                    } else {
+                      // If package not found on Packagist, return null
+                      resolve(null);
+                    }
+                  } catch (e) {
+                    resolve(null);
+                  }
+                });
+              }).on('error', (e) => {
+                console.error(`Error fetching data for ${repo}: ${e.message}`);
+                resolve(null); // Resolve with null on error to continue processing
+              });
+            });
           }
-          
-          // Generate community starter kits list
-          let communityList = '';
-          for (const [name, repo] of Object.entries(templates.community)) {
-            communityList += `- [${name}](https://github.com/${repo}) - \`${repo}\`\n`;
+
+          // Function to format install count with commas
+          function formatNumber(num) {
+            return num ? num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') : '0';
           }
-          
-          // Replace placeholders in README
-          readme = readme.replace('[OFFICIAL]', officialList.trim());
-          readme = readme.replace('[COMMUNITY]', communityList.trim());
-          
-          // Write updated README
-          fs.writeFileSync('README.md', readme);
-          
-          console.log('README.md has been updated with starter kits from templates.json');
+
+          // Main function to update README
+          async function updateReadme() {
+            // Read templates.json
+            const templates = JSON.parse(fs.readFileSync('templates.json', 'utf8'));
+            
+            // Read README.md
+            let readme = fs.readFileSync('README.md', 'utf8');
+            
+            // Generate official starter kits list
+            let officialList = '';
+            for (const [name, repo] of Object.entries(templates.official)) {
+              const packageData = await getPackageData(repo);
+              const installs = packageData ? packageData.package.downloads.total : 0;
+              officialList += `- [${name}](https://github.com/${repo}) - \`${repo}\` - ${formatNumber(installs)} installs\n`;
+            }
+            
+            // Generate community starter kits list
+            let communityList = '';
+            for (const [name, repo] of Object.entries(templates.community)) {
+              const packageData = await getPackageData(repo);
+              const installs = packageData ? packageData.package.downloads.total : 0;
+              communityList += `- [${name}](https://github.com/${repo}) - \`${repo}\` - ${formatNumber(installs)} installs\n`;
+            }
+            
+            // Replace placeholders in README
+            readme = readme.replace('[OFFICIAL]', officialList.trim());
+            readme = readme.replace('[COMMUNITY]', communityList.trim());
+            
+            // Write updated README
+            fs.writeFileSync('README.md', readme);
+            
+            console.log('README.md has been updated with starter kits from templates.json');
+          }
+
+          // Run the update
+          updateReadme().catch(err => {
+            console.error('Error updating README:', err);
+            process.exit(1);
+          });
           EOF
           
           # Run the script
