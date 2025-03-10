@@ -1,0 +1,42 @@
+name: Validate Templates JSON
+
+on:
+  pull_request:
+    paths:
+      - 'templates.json'
+
+jobs:
+  validate-json:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Validate templates.json
+        run: |
+          echo "Validating templates.json..."
+          # Check if file exists
+          if [ ! -f "templates.json" ]; then
+            echo "Error: templates.json file not found"
+            exit 1
+          fi
+          
+          # Validate JSON syntax
+          if ! jq empty templates.json 2>/dev/null; then
+            echo "Error: templates.json contains invalid JSON"
+            exit 1
+          fi
+          
+          # Validate structure (must have official and community sections)
+          if ! jq -e '.official and .community' templates.json >/dev/null; then
+            echo "Error: templates.json must contain both 'official' and 'community' sections"
+            exit 1
+          fi
+          
+          # Validate that all values are strings (repository paths)
+          if ! jq -e 'all(.. | objects | all(values | type == "string"))' templates.json >/dev/null; then
+            echo "Error: All repository values in templates.json must be strings"
+            exit 1
+          fi
+          
+          echo "✅ templates.json is valid"
