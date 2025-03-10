@@ -12,8 +12,6 @@ Using the [Laravel installer](https://laravel.com/docs/installation#installing-p
 
 ## Community Templates
 
-The following projects are community submitted starter kits, not associated with Laravel.
-
 - [Statamic](https://github.com/statamic/statamic) - `statamic/statamic` - 💾 133,241 installs
 - [Genesis](https://github.com/devdojo/genesis) - `devdojo/genesis` - 💾 8,681 installs
 - [Cachet](https://github.com/cachethq/cachet) - `cachethq/cachet` - 💾 404 installs
@@ -26,7 +24,7 @@ The following projects are community submitted starter kits, not associated with
 
 ## Submit Your Own Starter Kit
 
-If you have a starter kit that you would like to be added to this list, please add your starter kit under the `community` key in the [templates.json](templates.json) file, and submit a pull request.
+If you have a starter kit that you would like to be added to this list, please add your starter kit under the `community` key in the [templates.json](templates.json) file, and submit a pull request. The starter kit will dynamically be added to the Readme inside of the Github Action.
 
 ---
 
