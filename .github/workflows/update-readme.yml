@@ -70,8 +70,8 @@ jobs:
             // Read templates.json
             const templates = JSON.parse(fs.readFileSync('templates.json', 'utf8'));
             
-            // Read README.md
-            let readme = fs.readFileSync('README.md', 'utf8');
+            // Read README_template.md as the template
+            let readme = fs.readFileSync('README_template.md', 'utf8');
             
             // Generate official starter kits list
             let officialList = '';
@@ -90,14 +90,14 @@ jobs:
             }
             
             // Replace placeholders in README
-            console.log('Looking for placeholders in README...');
-            console.log('README before replacement:', readme);
+            console.log('Looking for placeholders in README_template...');
+            console.log('README_template before replacement:', readme);
             
             // Use regex with global flag to ensure all occurrences are replaced
             readme = readme.replace(/\[OFFICIAL\]/g, officialList.trim());
             readme = readme.replace(/\[COMMUNITY\]/g, communityList.trim());
             
-            console.log('README after replacement (excerpt):', readme.substring(0, 500) + '...');
+            console.log('Generated README content (excerpt):', readme.substring(0, 500) + '...');
             console.log('Official list generated:', officialList);
             console.log('Community list generated:', communityList);
             
@@ -121,9 +121,8 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+          # Always add README.md since we're generating it from the template
           git add README.md
-          git diff --quiet && git diff --staged --quiet || (
-            git commit -m "Update README with latest starter kits"
-            # Force push with lease for safety (will override conflicts but not if completely different history)
-            git push --force-with-lease origin HEAD:${{ github.ref }}
-          )
+          # Commit and force push to ensure README.md is always updated
+          git commit -m "Update README with latest starter kits" || echo "No changes to commit"
+          git push --force-with-lease origin HEAD:${{ github.ref }}
