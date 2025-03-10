@@ -12,10 +12,10 @@ Using the [Laravel installer](https://laravel.com/docs/installation#installing-p
 
 The following projects are community submitted starter kits, not associated with Laravel.
 
+[COMMUNITY]
+
 > [!IMPORTANT]
 > Be cautious when installing. Be sure to do your research and learn more about the project before installing.
-
-[COMMUNITY]
 
 ---
 

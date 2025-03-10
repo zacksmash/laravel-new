@@ -78,7 +78,7 @@ jobs:
             for (const [name, repo] of Object.entries(templates.official)) {
               const packageData = await getPackageData(repo);
               const installs = packageData ? packageData.package.downloads.total : 0;
-              officialList += `- [${name}](https://github.com/${repo}) - \`${repo}\` - 💾 ${formatNumber(installs)} installs\n`;
+              officialList += `- [${name}](https://github.com/${repo}) - \`${repo}\` - 💿 ${formatNumber(installs)} installs\n`;
             }
             
             // Generate community starter kits list
