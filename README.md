@@ -19,6 +19,7 @@ Using the [Laravel installer](https://laravel.com/docs/installation#installing-p
 - [TALL starters](https://github.com/mortenebak/tallstarter) - `mortenebak/tallstarter` - 💾 7 installs
 - [Svelte](https://github.com/oseughu/svelte-starter-kit) - `oseughu/svelte-starter-kit` - 💾 4 installs
 - [Larasonic](https://github.com/pushpak1300/larasonic) - `pushpak1300/larasonic` - 💾 0 installs
+- [Filament](https://github.com/filamentphp/filament) - `filamentphp/filament` - 💾 0 installs
 
 ---
 
