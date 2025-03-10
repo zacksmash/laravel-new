@@ -4,7 +4,9 @@ Using the [Laravel installer](https://laravel.com/docs/installation#installing-p
 
 ## Official Laravel Starter Kits
 
-[OFFICIAL]
+- [React](https://github.com/laravel/react-starter-kit) - `laravel/react-starter-kit`
+- [Vue](https://github.com/laravel/vue-starter-kit) - `laravel/vue-starter-kit`
+- [Livewire](https://github.com/laravel/livewire-starter-kit) - `laravel/livewire-starter-kit`
 
 ---
 
@@ -15,7 +17,11 @@ The following projects are community submitted starter kits, not associated with
 > [!IMPORTANT]
 > Be cautious when installing. Be sure to do your research and learn more about the project before installing.
 
-[COMMUNITY]
+- [Svelte](https://github.com/oseughu/svelte-starter-kit) - `oseughu/svelte-starter-kit`
+- [Wave](https://github.com/devdojo/wave) - `devdojo/wave`
+- [Genesis](https://github.com/thedevojo/genesis) - `thedevojo/genesis`
+- [Larasonic](https://github.com/pushpak1300/larasonic) - `pushpak1300/larasonic`
+- [TALLs Starter](https://github.com/mortenebak/tallstarter) - `mortenebak/tallstarter`
 
 ---
 
