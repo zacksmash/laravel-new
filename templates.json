@@ -5,6 +5,8 @@
         "Livewire": "laravel/livewire-starter-kit"
     },
     "community": {
+        "Statamic": "statamic/statamic",
+        "Cachet": "cachethq/cachet",
         "Svelte": "oseughu/svelte-starter-kit",
         "Wave": "devdojo/wave",
         "Genesis": "thedevojo/genesis",
