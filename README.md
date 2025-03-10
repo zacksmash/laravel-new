@@ -19,7 +19,7 @@ The following projects are community submitted starter kits, not associated with
 
 - [Svelte](https://github.com/oseughu/svelte-starter-kit) - `oseughu/svelte-starter-kit` - 💾 4 installs
 - [Wave](https://github.com/devdojo/wave) - `devdojo/wave` - 💾 23 installs
-- [Genesiss](https://github.com/thedevojo/genesis) - `thedevojo/genesis` - 💾 0 installs
+- [Genesis](https://github.com/thedevojo/genesis) - `thedevojo/genesis` - 💾 0 installs
 - [Larasonic](https://github.com/pushpak1300/larasonic) - `pushpak1300/larasonic` - 💾 0 installs
 - [TALL Starter](https://github.com/mortenebak/tallstarter) - `mortenebak/tallstarter` - 💾 7 installs
 
