@@ -78,7 +78,7 @@ jobs:
             for (const [name, repo] of Object.entries(templates.official)) {
               const packageData = await getPackageData(repo);
               const installs = packageData ? packageData.package.downloads.total : 0;
-              officialList += `- [${name}](https://github.com/${repo}) - \`${repo}\` - ${formatNumber(installs)} installs\n`;
+              officialList += `- [${name}](https://github.com/${repo}) - \`${repo}\` - 💾 ${formatNumber(installs)} installs\n`;
             }
             
             // Generate community starter kits list
@@ -86,12 +86,20 @@ jobs:
             for (const [name, repo] of Object.entries(templates.community)) {
               const packageData = await getPackageData(repo);
               const installs = packageData ? packageData.package.downloads.total : 0;
-              communityList += `- [${name}](https://github.com/${repo}) - \`${repo}\` - ${formatNumber(installs)} installs\n`;
+              communityList += `- [${name}](https://github.com/${repo}) - \`${repo}\` - 💾 ${formatNumber(installs)} installs\n`;
             }
             
             // Replace placeholders in README
-            readme = readme.replace('[OFFICIAL]', officialList.trim());
-            readme = readme.replace('[COMMUNITY]', communityList.trim());
+            console.log('Looking for placeholders in README...');
+            console.log('README before replacement:', readme);
+            
+            // Use regex with global flag to ensure all occurrences are replaced
+            readme = readme.replace(/\[OFFICIAL\]/g, officialList.trim());
+            readme = readme.replace(/\[COMMUNITY\]/g, communityList.trim());
+            
+            console.log('README after replacement (excerpt):', readme.substring(0, 500) + '...');
+            console.log('Official list generated:', officialList);
+            console.log('Community list generated:', communityList);
             
             // Write updated README
             fs.writeFileSync('README.md', readme);
@@ -114,4 +122,8 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add README.md
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update README with latest starter kits" && git push origin HEAD:${{ github.ref }})
+          git diff --quiet && git diff --staged --quiet || (
+            git commit -m "Update README with latest starter kits"
+            # Force push with lease for safety (will override conflicts but not if completely different history)
+            git push --force-with-lease origin HEAD:${{ github.ref }}
+          )
