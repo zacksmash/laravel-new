@@ -37,6 +37,7 @@ jobs:
           async function getPackageData(repo) {
             return new Promise((resolve, reject) => {
               const url = `https://packagist.org/packages/${repo}.json`;
+              console.log(`Fetching data for ${repo} from ${url}`);
               https.get(url, (res) => {
                 let data = '';
                 res.on('data', (chunk) => { data += chunk; });
@@ -44,12 +45,15 @@ jobs:
                   try {
                     if (res.statusCode === 200) {
                       const packageData = JSON.parse(data);
+                      console.log(`Successfully fetched data for ${repo}, installs: ${packageData.package.downloads.total}`);
                       resolve(packageData);
                     } else {
+                      console.log(`Package not found for ${repo}, status code: ${res.statusCode}`);
                       // If package not found on Packagist, return null
                       resolve(null);
                     }
                   } catch (e) {
+                    console.error(`Error parsing data for ${repo}: ${e.message}`);
                     resolve(null);
                   }
                 });
@@ -72,17 +76,31 @@ jobs:
             
             // Read README_template.md as the template
             let readme = fs.readFileSync('README_template.md', 'utf8');
+            console.log('Original README_template.md content:', readme);
+            
+            // Verify the template has been read correctly
+            if (!readme || readme.trim() === '') {
+              throw new Error('README_template.md is empty or could not be read');
+            }
+            
+            // Log the first line to verify it contains "laravel new starter"
+            const firstLine = readme.split('\n')[0];
+            console.log('First line of README_template.md:', firstLine);
             
             // Generate official starter kits list with sorting by installs
             const officialKits = [];
             for (const [name, repo] of Object.entries(templates.official)) {
               const packageData = await getPackageData(repo);
-              const installs = packageData ? packageData.package.downloads.total : 0;
+              // Ensure installs is a number for proper sorting
+              const installs = packageData && packageData.package && packageData.package.downloads ? 
+                parseInt(packageData.package.downloads.total, 10) : 0;
               officialKits.push({ name, repo, installs });
+              console.log(`Added official kit: ${name}, installs: ${installs}`);
             }
             
             // Sort official kits by installs (descending)
             officialKits.sort((a, b) => b.installs - a.installs);
+            console.log('Sorted official kits:', JSON.stringify(officialKits, null, 2));
             
             // Generate the formatted list
             let officialList = '';
@@ -94,12 +112,16 @@ jobs:
             const communityKits = [];
             for (const [name, repo] of Object.entries(templates.community)) {
               const packageData = await getPackageData(repo);
-              const installs = packageData ? packageData.package.downloads.total : 0;
+              // Ensure installs is a number for proper sorting
+              const installs = packageData && packageData.package && packageData.package.downloads ? 
+                parseInt(packageData.package.downloads.total, 10) : 0;
               communityKits.push({ name, repo, installs });
+              console.log(`Added community kit: ${name}, installs: ${installs}`);
             }
             
             // Sort community kits by installs (descending)
             communityKits.sort((a, b) => b.installs - a.installs);
+            console.log('Sorted community kits:', JSON.stringify(communityKits, null, 2));
             
             // Generate the formatted list
             let communityList = '';
@@ -122,9 +144,23 @@ jobs:
             // Write updated README
             fs.writeFileSync('README.md', readme);
             
+            // Verify the README.md was written correctly
+            const writtenReadme = fs.readFileSync('README.md', 'utf8');
+            console.log('First line of written README.md:', writtenReadme.split('\n')[0]);
+            
+            if (writtenReadme !== readme) {
+              console.warn('WARNING: Written README.md does not match the generated content');
+            }
+            
             console.log('README.md has been updated with starter kits from templates.json');
           }
 
+          // Verify README_template.md exists before running
+          if (!fs.existsSync('README_template.md')) {
+            console.error('ERROR: README_template.md does not exist');
+            process.exit(1);
+          }
+          
           // Run the update
           updateReadme().catch(err => {
             console.error('Error updating README:', err);
@@ -139,8 +175,19 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+          
+          # Check if README.md exists and show its content
+          echo "Current README.md content (first few lines):"
+          head README.md
+          
           # Always add README.md since we're generating it from the template
           git add README.md
-          # Commit and force push to ensure README.md is always updated
-          git commit -m "Update README with latest starter kits" || echo "No changes to commit"
-          git push --force-with-lease origin HEAD:${{ github.ref }}
+          
+          # Check for changes in the staging area
+          git status
+          
+          # Force the commit even if git thinks there are no changes
+          git commit --allow-empty -m "Update README with latest starter kits from template"
+          
+          # Force push to ensure README.md is always updated
+          git push --force origin HEAD:${{ github.ref }}
