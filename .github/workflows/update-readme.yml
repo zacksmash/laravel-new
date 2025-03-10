@@ -1,0 +1,66 @@
+name: Update README with Starter Kits
+
+on:
+  push:
+    branches:
+      - main
+      - dynamic-readme
+    paths:
+      - 'templates.json'
+      - 'README.md'
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Update README with Starter Kits
+        run: |
+          # Create a script to update the README
+          cat > update-readme.js << 'EOF'
+          const fs = require('fs');
+
+          // Read templates.json
+          const templates = JSON.parse(fs.readFileSync('templates.json', 'utf8'));
+          
+          // Read README.md
+          let readme = fs.readFileSync('README.md', 'utf8');
+          
+          // Generate official starter kits list
+          let officialList = '';
+          for (const [name, repo] of Object.entries(templates.official)) {
+            officialList += `- [${name}](https://github.com/${repo}) - \`${repo}\`\n`;
+          }
+          
+          // Generate community starter kits list
+          let communityList = '';
+          for (const [name, repo] of Object.entries(templates.community)) {
+            communityList += `- [${name}](https://github.com/${repo}) - \`${repo}\`\n`;
+          }
+          
+          // Replace placeholders in README
+          readme = readme.replace('[OFFICIAL]', officialList.trim());
+          readme = readme.replace('[COMMUNITY]', communityList.trim());
+          
+          // Write updated README
+          fs.writeFileSync('README.md', readme);
+          
+          console.log('README.md has been updated with starter kits from templates.json');
+          EOF
+          
+          # Run the script
+          node update-readme.js
+
+      - name: Commit and push if changed
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update README with latest starter kits" && git push)

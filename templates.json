@@ -1,0 +1,14 @@
+{
+    "official": {
+        "React": "laravel/react-starter-kit",
+        "Vue": "laravel/vue-starter-kit",
+        "Livewire": "laravel/livewire-starter-kit"
+    },
+    "community": {
+        "Svelte": "oseughu/svelte-starter-kit",
+        "Wave": "devdojo/wave",
+        "Genesis": "thedevojo/genesis",
+        "Larasonic": "pushpak1300/larasonic",
+        "TALL Starter": "mortenebak/tallstarter"
+    }
+}
