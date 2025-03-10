@@ -73,20 +73,38 @@ jobs:
             // Read README_template.md as the template
             let readme = fs.readFileSync('README_template.md', 'utf8');
             
-            // Generate official starter kits list
-            let officialList = '';
+            // Generate official starter kits list with sorting by installs
+            const officialKits = [];
             for (const [name, repo] of Object.entries(templates.official)) {
               const packageData = await getPackageData(repo);
               const installs = packageData ? packageData.package.downloads.total : 0;
-              officialList += `- [${name}](https://github.com/${repo}) - \`${repo}\` - 💿 ${formatNumber(installs)} installs\n`;
+              officialKits.push({ name, repo, installs });
             }
             
-            // Generate community starter kits list
-            let communityList = '';
+            // Sort official kits by installs (descending)
+            officialKits.sort((a, b) => b.installs - a.installs);
+            
+            // Generate the formatted list
+            let officialList = '';
+            for (const kit of officialKits) {
+              officialList += `- [${kit.name}](https://github.com/${kit.repo}) - \`${kit.repo}\` - 💿 ${formatNumber(kit.installs)} installs\n`;
+            }
+            
+            // Generate community starter kits list with sorting by installs
+            const communityKits = [];
             for (const [name, repo] of Object.entries(templates.community)) {
               const packageData = await getPackageData(repo);
               const installs = packageData ? packageData.package.downloads.total : 0;
-              communityList += `- [${name}](https://github.com/${repo}) - \`${repo}\` - 💾 ${formatNumber(installs)} installs\n`;
+              communityKits.push({ name, repo, installs });
+            }
+            
+            // Sort community kits by installs (descending)
+            communityKits.sort((a, b) => b.installs - a.installs);
+            
+            // Generate the formatted list
+            let communityList = '';
+            for (const kit of communityKits) {
+              communityList += `- [${kit.name}](https://github.com/${kit.repo}) - \`${kit.repo}\` - 💾 ${formatNumber(kit.installs)} installs\n`;
             }
             
             // Replace placeholders in README
