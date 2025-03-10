@@ -8,7 +8,7 @@ In the latest version of the [Laravel installer](https://laravel.com/docs/instal
 
 ## Official Laravel Starter Kits
 
-Below are the list of the [Official Laravel Starter Kits](https://laravel.com/starter-kits). These can be installed via the CLI without the need to include the `--using` flag; however, to keep things consistent we'll show the value of the `--using` flag for each starter kit.
+Below is the list of the [Official Laravel Starter Kits](https://laravel.com/starter-kits). These can be installed via the CLI without including the `--using` flag; however, to keep things consistent, we'll show the value of the `--using` flag for each starter kit.
 
 ### [React Starter Kit](https://github.com/laravel/react-starter-kit)
 
@@ -30,7 +30,7 @@ Below are the list of the [Official Laravel Starter Kits](https://laravel.com/st
 
 ---
 
-## Community Submited Starter Kits
+## Community Submitted Starter Kits
 
 The following projects are community submitted starter kits, not associated with Laravel.
 
@@ -71,7 +71,7 @@ The following projects are community submitted starter kits, not associated with
 
 ## Blog and CMS Templates
 
-Although the following projects are not starter kits, they can still easily be installed using the Laravel installer. Below are a list of Blog and CMS templates you can use for your next project.
+Although the following projects are not starter kits, they can still easily be installed using the Laravel installer. Below is a list of Blog and CMS templates you can use for your next project.
 
 #### [Statamic](https://github.com/statamic/statamic)
 
@@ -99,7 +99,7 @@ Although the following projects are not starter kits, they can still easily be i
 
 ## Other Templates
 
-Here are a list of other open source projects that you can use as a starting template for your next project.
+Here is a list of other open source projects that you can use as a starting template for your next project.
 
 #### [Cachet](https://github.com/cachethq/cachet)
 
