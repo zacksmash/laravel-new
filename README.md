@@ -1,127 +1,34 @@
-# laravel new project 💾
+# laravel new starter
 
-In the latest version of the [Laravel installer](https://laravel.com/docs/installation#installing-php) developers can pass the `--using` flag to the `laravel new` command to install community submitted projects or starter kits.
+Using the [Laravel installer](https://laravel.com/docs/installation#installing-php) developers can pass the `--using` flag to the `laravel new` command, and install any community starter template. Below is a list of the available templates.
 
-<img src="https://raw.githubusercontent.com/tnylea/laravel-new/refs/heads/main/screenshot.png" alt="laravel new screenshot" width="100%" height="auto" />
+## Official Templates
 
----
-
-## Official Laravel Starter Kits
-
-Below is the list of the [Official Laravel Starter Kits](https://laravel.com/starter-kits). These can be installed via the CLI without including the `--using` flag; however, to keep things consistent, we'll show the value of the `--using` flag for each starter kit.
-
-### [React Starter Kit](https://github.com/laravel/react-starter-kit)
-
-```
---using=laravel/react-starter-kit
-````
-
-### [Vue Starter Kit](https://github.com/laravel/vue-starter-kit) 
-
-```
---using=laravel/vue-starter-kit
-````
-
-### [Livewire Starter Kit](https://github.com/laravel/livewire-starter-kit) 
-
-```
---using=laravel/livewire-starter-kit
-````
+- [Livewire](https://github.com/laravel/livewire-starter-kit) - `laravel/livewire-starter-kit` - 💿 20,194 installs
+- [React](https://github.com/laravel/react-starter-kit) - `laravel/react-starter-kit` - 💿 19,894 installs
+- [Vue](https://github.com/laravel/vue-starter-kit) - `laravel/vue-starter-kit` - 💿 14,226 installs
 
 ---
 
-## Community Submitted Starter Kits
+## Community Templates
 
 The following projects are community submitted starter kits, not associated with Laravel.
 
+- [Statamic](https://github.com/statamic/statamic) - `statamic/statamic` - 💾 133,241 installs
+- [Genesis](https://github.com/devdojo/genesis) - `devdojo/genesis` - 💾 8,681 installs
+- [Cachet](https://github.com/cachethq/cachet) - `cachethq/cachet` - 💾 404 installs
+- [Wave](https://github.com/devdojo/wave) - `devdojo/wave` - 💾 23 installs
+- [TALL starters](https://github.com/mortenebak/tallstarter) - `mortenebak/tallstarter` - 💾 7 installs
+- [Svelte](https://github.com/oseughu/svelte-starter-kit) - `oseughu/svelte-starter-kit` - 💾 4 installs
+- [Larasonic](https://github.com/pushpak1300/larasonic) - `pushpak1300/larasonic` - 💾 0 installs
+
+---
+
+## Submit Your Own Starter Kit
+
+If you have a starter kit that you would like to be added to this list, please add your starter kit under the `community` key in the [templates.json](templates.json) file, and submit a pull request.
+
+---
+
 > [!IMPORTANT]
-> Be cautious when installing. Be sure to do your research and learn more about the project before installing.
-
-#### [Svelte Starter Kit](https://github.com/oseughu/svelte-starter-kit) 
-
-```
---using=oseughu/svelte-starter-kit
-````
-
-#### [Wave Starter Kit](https://github.com/thedevdojo/wave)
-
-```
---using=devdojo/wave
-```
-
-#### [Genesis Starter Kit](https://github.com/thedevdojo/genesis)
-
-```
---using=devdojo/genesis
-```
-
-#### [Larasonic](https://github.com/pushpak1300/Larasonic)
-
-```
---using=pushpak1300/larasonic
-```
-
-#### [TALL Starter](https://github.com/mortenebak/tallstarter)
-
-```
---using=mortenebak/tallstarter
-```
-
----
-
-## Blog and CMS Templates
-
-Although the following projects are not starter kits, they can still easily be installed using the Laravel installer. Below is a list of Blog and CMS templates you can use for your next project.
-
-#### [Statamic](https://github.com/statamic/statamic)
-
-```
---using=statamic/statamic
-```
-
-#### [MicroWeber](https://github.com/microweber/microweber)
-
-```
---using=microweber/microweber
-```
-
-#### [OctoberCMS](https://github.com/octobercms/october)
-
-```
---using=octobercms/october
-```
-
-#### [Bookstack](https://github.com/BookStackApp/BookStack)
-
-```
---using=BookStackApp/BookStack
-```
-
-## Other Templates
-
-Here is a list of other open source projects that you can use as a starting template for your next project.
-
-#### [Cachet](https://github.com/cachethq/cachet)
-
-```
---using=cachethq/cachet
-```
-
----
-
-### Other open source apps we'll be adding to the list:
-
- - Filament - https://github.com/filamentphp/filament
- - Koel - https://github.com/koel/koel
- - Invoice Shelf - https://github.com/InvoiceShelf/InvoiceShelf
- - Coolify - https://github.com/coollabsio/coolify
- - Bagisto - https://github.com/bagisto/bagisto
- - Akaunting - https://github.com/akaunting/akaunting
- - Backpack for Laravel - https://github.com/Laravel-Backpack/demo
- - Invoice Ninja - https://github.com/invoiceninja/invoiceninja
- - MonicaHQ - https://github.com/monicahq/monica
- - Orchid - https://github.com/orchidsoftware/platform
- - Snipe IT - https://github.com/snipe/snipe-it
- - Pinkary Project - https://github.com/pinkary-project/pinkary.com
- - Twill CMS - https://github.com/area17/twill
- - Jigsaw - https://github.com/tighten/jigsaw
+> Be cautious when installing any starter. Be sure to do research and learn more about each project.
