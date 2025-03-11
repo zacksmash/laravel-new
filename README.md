@@ -13,16 +13,19 @@ Using the [Laravel installer](https://laravel.com/docs/installation#installing-p
 ## Community Templates
 
 - [Statamic](https://github.com/statamic/statamic) - `statamic/statamic` - 💾 133,328 installs
-- [Genesis](https://github.com/devdojo/genesis) - `devdojo/genesis` - 💾 8,688 installs
+- [Genesis](https://github.com/thedevdojo/genesis) - `devdojo/genesis` - 💾 8,688 installs
 - [Filament Zeus starters](https://github.com/lara-zeus/zeus) - `lara-zeus/zeus` - 💾 762 installs
 - [Cachet](https://github.com/cachethq/cachet) - `cachethq/cachet` - 💾 405 installs
-- [Wave](https://github.com/devdojo/wave) - `devdojo/wave` - 💾 25 installs
-- [TALL starters](https://github.com/mortenebak/tallstarter) - `mortenebak/tallstarter` - 💾 10 installs
+- [Wave](https://github.com/thedevdojo/wave) - `devdojo/wave` - 💾 25 installs
+- [TALL starter](https://github.com/mortenebak/tallstarter) - `mortenebak/tallstarter` - 💾 10 installs
 - [Svelte](https://github.com/oseughu/svelte-starter-kit) - `oseughu/svelte-starter-kit` - 💾 4 installs
 - [Livewire Starter](https://github.com/tnylea/livewire-starter) - `tnylea/livewire-starter` - 💾 2 installs
 - [Larasonic Vue](https://github.com/shipfastlabs/larasonic-vue) - `shipfastlabs/larasonic-vue` - 💾 1 installs
+- [Modern Vue Starter Kit](https://github.com/shipfastlabs/modern-vue-starter-kit) - `shipfastlabs/modern-vue-starter-kit` - 💾 1 installs
 - [Filament](https://github.com/tnylea/filamentapp) - `tnylea/filamentapp` - 💾 0 installs
 - [Larasonic React](https://github.com/shipfastlabs/larasonic-react) - `shipfastlabs/larasonic-react` - 💾 0 installs
+- [Modern Livewire Starter Kit](https://github.com/shipfastlabs/modern-livewire-starter-kit) - `shipfastlabs/modern-livewire-starter-kit` - 💾 0 installs
+- [Modern React Starter Kit](https://github.com/shipfastlabs/modern-react-starter-kit) - `shipfastlabs/modern-react-starter-kit` - 💾 0 installs
 
 ---
 
