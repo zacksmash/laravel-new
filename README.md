@@ -14,6 +14,7 @@ Using the [Laravel installer](https://laravel.com/docs/installation#installing-p
 
 - [Statamic](https://github.com/statamic/statamic) - `statamic/statamic` - 💾 133,328 installs
 - [Genesis](https://github.com/devdojo/genesis) - `devdojo/genesis` - 💾 8,688 installs
+- [Filament Zeus starters](https://github.com/lara-zeus/zeus) - `lara-zeus/zeus` - 💾 762 installs
 - [Cachet](https://github.com/cachethq/cachet) - `cachethq/cachet` - 💾 405 installs
 - [Wave](https://github.com/devdojo/wave) - `devdojo/wave` - 💾 25 installs
 - [TALL starters](https://github.com/mortenebak/tallstarter) - `mortenebak/tallstarter` - 💾 10 installs
