@@ -18,7 +18,9 @@ Using the [Laravel installer](https://laravel.com/docs/installation#installing-p
 - [Wave](https://github.com/devdojo/wave) - `devdojo/wave` - 💾 25 installs
 - [TALL starters](https://github.com/mortenebak/tallstarter) - `mortenebak/tallstarter` - 💾 10 installs
 - [Svelte](https://github.com/oseughu/svelte-starter-kit) - `oseughu/svelte-starter-kit` - 💾 4 installs
+- [Livewire Starter](https://github.com/tnylea/livewire-starter) - `tnylea/livewire-starter` - 💾 2 installs
 - [Larasonic Vue](https://github.com/shipfastlabs/larasonic-vue) - `shipfastlabs/larasonic-vue` - 💾 1 installs
+- [Filament](https://github.com/tnylea/filamentapp) - `tnylea/filamentapp` - 💾 0 installs
 - [Larasonic React](https://github.com/shipfastlabs/larasonic-react) - `shipfastlabs/larasonic-react` - 💾 0 installs
 
 ---
