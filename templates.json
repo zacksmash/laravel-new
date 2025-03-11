@@ -10,7 +10,8 @@
         "Svelte": "oseughu/svelte-starter-kit",
         "Wave": "devdojo/wave",
         "Genesis": "devdojo/genesis",
-        "Larasonic": "pushpak1300/larasonic",
+        "Larasonic React": "shipfastlabs/larasonic-react",
+        "Larasonic Vue": "shipfastlabs/larasonic-vue",
         "TALL starters": "mortenebak/tallstarter"
     }
 }
