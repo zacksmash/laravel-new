@@ -10,6 +10,8 @@
         "Svelte": "oseughu/svelte-starter-kit",
         "Wave": "devdojo/wave",
         "Genesis": "devdojo/genesis",
+        "Filament": "tnylea/filamentapp",
+        "Livewire Starter": "tnylea/livewire-starter",
         "Larasonic React": "shipfastlabs/larasonic-react",
         "Larasonic Vue": "shipfastlabs/larasonic-vue",
         "TALL starters": "mortenebak/tallstarter"
