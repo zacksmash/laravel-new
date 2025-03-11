@@ -4,21 +4,22 @@ Using the [Laravel installer](https://laravel.com/docs/installation#installing-p
 
 ## Official Templates
 
-- [Livewire](https://github.com/laravel/livewire-starter-kit) - `laravel/livewire-starter-kit` - 💿 20,194 installs
-- [React](https://github.com/laravel/react-starter-kit) - `laravel/react-starter-kit` - 💿 19,894 installs
-- [Vue](https://github.com/laravel/vue-starter-kit) - `laravel/vue-starter-kit` - 💿 14,226 installs
+- [Livewire](https://github.com/laravel/livewire-starter-kit) - `laravel/livewire-starter-kit` - 💿 21,209 installs
+- [React](https://github.com/laravel/react-starter-kit) - `laravel/react-starter-kit` - 💿 20,827 installs
+- [Vue](https://github.com/laravel/vue-starter-kit) - `laravel/vue-starter-kit` - 💿 14,971 installs
 
 ---
 
 ## Community Templates
 
-- [Statamic](https://github.com/statamic/statamic) - `statamic/statamic` - 💾 133,241 installs
-- [Genesis](https://github.com/devdojo/genesis) - `devdojo/genesis` - 💾 8,681 installs
-- [Cachet](https://github.com/cachethq/cachet) - `cachethq/cachet` - 💾 404 installs
-- [Wave](https://github.com/devdojo/wave) - `devdojo/wave` - 💾 23 installs
-- [TALL starters](https://github.com/mortenebak/tallstarter) - `mortenebak/tallstarter` - 💾 7 installs
+- [Statamic](https://github.com/statamic/statamic) - `statamic/statamic` - 💾 133,328 installs
+- [Genesis](https://github.com/devdojo/genesis) - `devdojo/genesis` - 💾 8,688 installs
+- [Cachet](https://github.com/cachethq/cachet) - `cachethq/cachet` - 💾 405 installs
+- [Wave](https://github.com/devdojo/wave) - `devdojo/wave` - 💾 25 installs
+- [TALL starters](https://github.com/mortenebak/tallstarter) - `mortenebak/tallstarter` - 💾 10 installs
 - [Svelte](https://github.com/oseughu/svelte-starter-kit) - `oseughu/svelte-starter-kit` - 💾 4 installs
-- [Larasonic](https://github.com/pushpak1300/larasonic) - `pushpak1300/larasonic` - 💾 0 installs
+- [Larasonic Vue](https://github.com/shipfastlabs/larasonic-vue) - `shipfastlabs/larasonic-vue` - 💾 1 installs
+- [Larasonic React](https://github.com/shipfastlabs/larasonic-react) - `shipfastlabs/larasonic-react` - 💾 0 installs
 
 ---
 
