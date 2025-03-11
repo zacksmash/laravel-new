@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - restructure
 
 permissions:
   contents: write
@@ -85,13 +86,18 @@ jobs:
             
             // Generate official starter kits list with sorting by installs
             const officialKits = [];
-            for (const [name, repo] of Object.entries(templates.official)) {
-              const packageData = await getPackageData(repo);
+            for (const kit of templates.official) {
+              const packageData = await getPackageData(kit.package);
               // Ensure installs is a number for proper sorting
               const installs = packageData && packageData.package && packageData.package.downloads ? 
                 parseInt(packageData.package.downloads.total, 10) : 0;
-              officialKits.push({ name, repo, installs });
-              console.log(`Added official kit: ${name}, installs: ${installs}`);
+              officialKits.push({ 
+                title: kit.title, 
+                package: kit.package, 
+                repo: kit.repo, 
+                installs: installs 
+              });
+              console.log(`Added official kit: ${kit.title}, package: ${kit.package}, repo: ${kit.repo}, installs: ${installs}`);
             }
             
             // Sort official kits by installs (descending)
@@ -101,18 +107,23 @@ jobs:
             // Generate the formatted list
             let officialList = '';
             for (const kit of officialKits) {
-              officialList += `- [${kit.name}](https://github.com/${kit.repo}) - \`${kit.repo}\` - 💿 ${formatNumber(kit.installs)} installs\n`;
+              officialList += `- [${kit.title}](https://github.com/${kit.repo}) - \`${kit.package}\` - 💿 ${formatNumber(kit.installs)} installs\n`;
             }
             
             // Generate community starter kits list with sorting by installs
             const communityKits = [];
-            for (const [name, repo] of Object.entries(templates.community)) {
-              const packageData = await getPackageData(repo);
+            for (const kit of templates.community) {
+              const packageData = await getPackageData(kit.package);
               // Ensure installs is a number for proper sorting
               const installs = packageData && packageData.package && packageData.package.downloads ? 
                 parseInt(packageData.package.downloads.total, 10) : 0;
-              communityKits.push({ name, repo, installs });
-              console.log(`Added community kit: ${name}, installs: ${installs}`);
+              communityKits.push({ 
+                title: kit.title, 
+                package: kit.package, 
+                repo: kit.repo, 
+                installs: installs 
+              });
+              console.log(`Added community kit: ${kit.title}, package: ${kit.package}, repo: ${kit.repo}, installs: ${installs}`);
             }
             
             // Sort community kits by installs (descending)
@@ -122,7 +133,7 @@ jobs:
             // Generate the formatted list
             let communityList = '';
             for (const kit of communityKits) {
-              communityList += `- [${kit.name}](https://github.com/${kit.repo}) - \`${kit.repo}\` - 💾 ${formatNumber(kit.installs)} installs\n`;
+              communityList += `- [${kit.title}](https://github.com/${kit.repo}) - \`${kit.package}\` - 💾 ${formatNumber(kit.installs)} installs\n`;
             }
             
             // Replace placeholders in README
