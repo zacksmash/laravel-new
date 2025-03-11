@@ -61,7 +61,7 @@
             "repo": "shipfastlabs/larasonic-vue"
         },
         {
-            "title": "TALL starters",
+            "title": "TALL starter",
             "package": "mortenebak/tallstarter",
             "repo": "mortenebak/tallstarter"
         },
@@ -69,6 +69,21 @@
             "title": "Filament Zeus starters",
             "package": "lara-zeus/zeus",
             "repo": "lara-zeus/zeus"
+        },
+        {
+            "title": "Modern Livewire Starter Kit",
+            "package": "shipfastlabs/modern-livewire-starter-kit",
+            "repo": "shipfastlabs/modern-livewire-starter-kit"
+        },
+        {
+            "title": "Modern Vue Starter Kit",
+            "package": "shipfastlabs/modern-vue-starter-kit",
+            "repo": "shipfastlabs/modern-vue-starter-kit"
+        },
+        {
+            "title": "Modern React Starter Kit",
+            "package": "shipfastlabs/modern-react-starter-kit",
+            "repo": "shipfastlabs/modern-react-starter-kit"
         }
     ]
 }
