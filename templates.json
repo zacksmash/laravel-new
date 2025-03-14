@@ -87,8 +87,8 @@
         },
         {
             "title": "Tablar Starter Kit",
-            "package": "takielias/tablar",
-            "repo": "takielias/tablar"
+            "package": "takielias/tablar-starter-kit",
+            "repo": "takielias/tablar-starter-kit"
         }
     ]
 }
