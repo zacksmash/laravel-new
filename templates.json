@@ -89,6 +89,12 @@
             "title": "Justd Starter Kit",
             "package": "justd/laravel",
             "repo": "justdlabs/laravel"
+        },
+                  
+        {
+            "title": "Unstyled Blade Starter Kit",
+            "package": "javdome/unstyled-blade-starter-kit",
+            "repo": "javdome/unstyled-blade-starter-kit"
         }
     ]
 }
