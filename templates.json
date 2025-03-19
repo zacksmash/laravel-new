@@ -111,6 +111,11 @@
             "repo": "tnylea/react-starter"
         },
         {
+            "title": "New Laravel Inertia+React App",
+            "package": "tnylea/react-inertia-starter",
+            "repo": "tnylea/react-inertia-starter"
+        },
+        {
             "title": "Bootstrap Starter Kit",
             "package": "hostmoz/laravel-bootstrap-starter-kit",
             "repo": "hostmoz/laravel-bootstrap-starter-kit"
