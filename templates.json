@@ -104,6 +104,11 @@
             "title": "MoonShine",
             "package": "moonshine/app",
             "repo": "moonshine-software/app"
+        },
+        {
+            "title": "New Laravel React App",
+            "package": "tnylea/react-starter",
+            "repo": "tnylea/react-starter"
         }
     ]
 }
