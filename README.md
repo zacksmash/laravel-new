@@ -27,6 +27,7 @@ Using the [Laravel installer](https://laravel.com/docs/installation#installing-p
 - [Larasonic React](https://github.com/shipfastlabs/larasonic-react) - `shipfastlabs/larasonic-react` - 💾 18 installs
 - [Unstyled Blade Starter Kit](https://github.com/javdome/unstyled-blade-starter-kit) - `javdome/unstyled-blade-starter-kit` - 💾 12 installs
 - [Livewire Starter](https://github.com/tnylea/livewire-starter) - `tnylea/livewire-starter` - 💾 8 installs
+- [Bootstrap Starter Kit](https://github.com/hostmoz/laravel-bootstrap-starter-kit) - `hostmoz/laravel-bootstrap-starter-kit` - 💾 8 installs
 - [React JSX Starter Kit](https://github.com/YazidKHALDI/react-jsx-starter-kit) - `YazidKHALDI/react-jsx-starter-kit` - 💾 7 installs
 - [Tablar Starter Kit](https://github.com/takielias/tablar-starter-kit) - `takielias/tablar-starter-kit` - 💾 7 installs
 - [MoonShine](https://github.com/moonshine-software/app) - `moonshine/app` - 💾 2 installs
