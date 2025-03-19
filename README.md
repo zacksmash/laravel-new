@@ -32,6 +32,7 @@ Using the [Laravel installer](https://laravel.com/docs/installation#installing-p
 - [Tablar Starter Kit](https://github.com/takielias/tablar-starter-kit) - `takielias/tablar-starter-kit` - 💾 7 installs
 - [MoonShine](https://github.com/moonshine-software/app) - `moonshine/app` - 💾 2 installs
 - [New Laravel React App](https://github.com/tnylea/react-starter) - `tnylea/react-starter` - 💾 0 installs
+- [New Laravel Inertia+React App](https://github.com/tnylea/react-inertia-starter) - `tnylea/react-inertia-starter` - 💾 0 installs
 
 ---
 
