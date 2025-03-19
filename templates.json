@@ -86,9 +86,14 @@
             "repo": "shipfastlabs/modern-react-starter-kit"
         },
         {
+            "title": "React JSX Starter Kit",
+            "package": "YazidKHALDI/react-jsx-starter-kit",
+            "repo": "YazidKHALDI/react-jsx-starter-kit"
+        },
+        {
             "title": "Unstyled Blade Starter Kit",
             "package": "javdome/unstyled-blade-starter-kit",
             "repo": "javdome/unstyled-blade-starter-kit"
-        }        
+        }
     ]
 }
