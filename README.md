@@ -29,6 +29,7 @@ Using the [Laravel installer](https://laravel.com/docs/installation#installing-p
 - [Livewire Starter](https://github.com/tnylea/livewire-starter) - `tnylea/livewire-starter` - 💾 8 installs
 - [React JSX Starter Kit](https://github.com/YazidKHALDI/react-jsx-starter-kit) - `YazidKHALDI/react-jsx-starter-kit` - 💾 7 installs
 - [Tablar Starter Kit](https://github.com/takielias/tablar-starter-kit) - `takielias/tablar-starter-kit` - 💾 7 installs
+- [MoonShine](https://github.com/moonshine-software/app) - `moonshine/app` - 💾 2 installs
 
 ---
 
