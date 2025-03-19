@@ -30,6 +30,7 @@ Using the [Laravel installer](https://laravel.com/docs/installation#installing-p
 - [React JSX Starter Kit](https://github.com/YazidKHALDI/react-jsx-starter-kit) - `YazidKHALDI/react-jsx-starter-kit` - 💾 7 installs
 - [Tablar Starter Kit](https://github.com/takielias/tablar-starter-kit) - `takielias/tablar-starter-kit` - 💾 7 installs
 - [MoonShine](https://github.com/moonshine-software/app) - `moonshine/app` - 💾 2 installs
+- [New Laravel React App](https://github.com/tnylea/react-starter) - `tnylea/react-starter` - 💾 0 installs
 
 ---
 
