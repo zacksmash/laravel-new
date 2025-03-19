@@ -94,6 +94,11 @@
             "title": "Unstyled Blade Starter Kit",
             "package": "javdome/unstyled-blade-starter-kit",
             "repo": "javdome/unstyled-blade-starter-kit"
+        },
+        {
+            "title": "Tablar Starter Kit",
+            "package": "takielias/tablar-starter-kit",
+            "repo": "takielias/tablar-starter-kit"
         }
     ]
 }
