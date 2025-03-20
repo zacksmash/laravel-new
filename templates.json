@@ -119,6 +119,11 @@
             "title": "Bootstrap Starter Kit",
             "package": "hostmoz/laravel-bootstrap-starter-kit",
             "repo": "hostmoz/laravel-bootstrap-starter-kit"
+        },
+        {
+            "title": "Blade Starter Kit (with FluxUI)",
+            "package": "imacrayon/blade-starter-kit",
+            "repo": "imacrayon/blade-starter-kit"
         }
     ]
 }
