@@ -121,6 +121,11 @@
       "title": "Bootstrap Starter Kit",
       "package": "hostmoz/laravel-bootstrap-starter-kit",
       "repo": "hostmoz/laravel-bootstrap-starter-kit"
+    },
+    {
+      "title": "Laravel Breeze React Starter Kit",
+      "package": "luis-developer-08/breeze-react-jsx-starter-kit",
+      "repo": "luis-developer-08/breeze-react-jsx-starter-kit"
     }
   ]
 }
