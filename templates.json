@@ -125,11 +125,15 @@
             "package": "imacrayon/blade-starter-kit",
             "repo": "imacrayon/blade-starter-kit"
         },
-        
         {
             "title": "React (Mantine) Starter Kit",
             "package": "adrum/laravel-react-mantine-starter-kit",
             "repo": "adrum/laravel-react-mantine-starter-kit"
+        },
+        {
+            "title": "Jetstream React (TypeScript)",
+            "package": "adrum/laravel-jetstream-react-typescript",
+            "repo": "adrum/laravel-jetstream-react-typescript"
         }
     ]
 }
