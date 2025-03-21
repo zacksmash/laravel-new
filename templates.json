@@ -134,6 +134,11 @@
             "title": "Jetstream React (TypeScript)",
             "package": "adrum/laravel-jetstream-react-typescript",
             "repo": "adrum/laravel-jetstream-react-typescript"
+        },
+        {
+            "title": "Laravel Breeze React Starter Kit",
+            "package": "luis-developer-08/breeze-react-jsx-starter-kit",
+            "repo": "luis-developer-08/breeze-react-jsx-starter-kit"
         }
     ]
 }
