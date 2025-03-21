@@ -139,6 +139,11 @@
             "title": "Laravel Breeze React Starter Kit",
             "package": "luis-developer-08/breeze-react-jsx-starter-kit",
             "repo": "luis-developer-08/breeze-react-jsx-starter-kit"
+        },
+        {
+            "title": "Justd Starter Kit",
+            "package": "justd/laravel",
+            "repo": "justdlabs/laravel"
         }
     ]
 }
