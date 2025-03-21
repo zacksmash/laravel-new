@@ -32,6 +32,7 @@ Using the [Laravel installer](https://laravel.com/docs/installation#installing-p
 - [New Laravel React App](https://github.com/tnylea/react-starter) - `tnylea/react-starter` - 💾 12 installs
 - [Livewire Starter](https://github.com/tnylea/livewire-starter) - `tnylea/livewire-starter` - 💾 10 installs
 - [Bootstrap Starter Kit](https://github.com/hostmoz/laravel-bootstrap-starter-kit) - `hostmoz/laravel-bootstrap-starter-kit` - 💾 10 installs
+- [React (Mantine) Starter Kit](https://github.com/adrum/laravel-react-mantine-starter-kit) - `adrum/laravel-react-mantine-starter-kit` - 💾 10 installs
 - [React JSX Starter Kit](https://github.com/YazidKHALDI/react-jsx-starter-kit) - `YazidKHALDI/react-jsx-starter-kit` - 💾 9 installs
 - [Jetstream React (TypeScript)](https://github.com/adrum/laravel-jetstream-react-typescript) - `adrum/laravel-jetstream-react-typescript` - 💾 1 installs
 - [New Laravel Inertia+React App](https://github.com/tnylea/react-inertia-starter) - `tnylea/react-inertia-starter` - 💾 0 installs
