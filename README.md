@@ -23,6 +23,7 @@ Using the [Laravel installer](https://laravel.com/docs/installation#installing-p
 - [Svelte](https://github.com/oseughu/svelte-starter-kit) - `oseughu/svelte-starter-kit` - 💾 41 installs
 - [Modern React Starter Kit](https://github.com/shipfastlabs/modern-react-starter-kit) - `shipfastlabs/modern-react-starter-kit` - 💾 41 installs
 - [Modern Vue Starter Kit](https://github.com/shipfastlabs/modern-vue-starter-kit) - `shipfastlabs/modern-vue-starter-kit` - 💾 40 installs
+- [Justd Starter Kit](https://github.com/justdlabs/laravel) - `justd/laravel` - 💾 38 installs
 - [Larasonic Vue](https://github.com/shipfastlabs/larasonic-vue) - `shipfastlabs/larasonic-vue` - 💾 26 installs
 - [Modern Livewire Starter Kit](https://github.com/shipfastlabs/modern-livewire-starter-kit) - `shipfastlabs/modern-livewire-starter-kit` - 💾 24 installs
 - [Larasonic React](https://github.com/shipfastlabs/larasonic-react) - `shipfastlabs/larasonic-react` - 💾 20 installs
