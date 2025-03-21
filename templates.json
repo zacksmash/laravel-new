@@ -86,15 +86,64 @@
             "repo": "shipfastlabs/modern-react-starter-kit"
         },
         {
-            "title": "Justd Starter Kit",
-            "package": "justd/laravel",
-            "repo": "justdlabs/laravel"
+            "title": "React JSX Starter Kit",
+            "package": "YazidKHALDI/react-jsx-starter-kit",
+            "repo": "YazidKHALDI/react-jsx-starter-kit"
         },
-                  
         {
             "title": "Unstyled Blade Starter Kit",
             "package": "javdome/unstyled-blade-starter-kit",
             "repo": "javdome/unstyled-blade-starter-kit"
+        },
+        {
+            "title": "Tablar Starter Kit",
+            "package": "takielias/tablar-starter-kit",
+            "repo": "takielias/tablar-starter-kit"
+        },
+        {
+            "title": "MoonShine",
+            "package": "moonshine/app",
+            "repo": "moonshine-software/app"
+        },
+        {
+            "title": "New Laravel React App",
+            "package": "tnylea/react-starter",
+            "repo": "tnylea/react-starter"
+        },
+        {
+            "title": "New Laravel Inertia+React App",
+            "package": "tnylea/react-inertia-starter",
+            "repo": "tnylea/react-inertia-starter"
+        },
+        {
+            "title": "Bootstrap Starter Kit",
+            "package": "hostmoz/laravel-bootstrap-starter-kit",
+            "repo": "hostmoz/laravel-bootstrap-starter-kit"
+        },
+        {
+            "title": "Blade Starter Kit (with FluxUI)",
+            "package": "imacrayon/blade-starter-kit",
+            "repo": "imacrayon/blade-starter-kit"
+        },
+        {
+            "title": "React (Mantine) Starter Kit",
+            "package": "adrum/laravel-react-mantine-starter-kit",
+            "repo": "adrum/laravel-react-mantine-starter-kit"
+        },
+        {
+            "title": "Jetstream React (TypeScript)",
+            "package": "adrum/laravel-jetstream-react-typescript",
+            "repo": "adrum/laravel-jetstream-react-typescript"
+        },
+        {
+            "title": "Laravel Breeze React Starter Kit",
+            "package": "luis-developer-08/breeze-react-jsx-starter-kit",
+            "repo": "luis-developer-08/breeze-react-jsx-starter-kit"
+        },
+        {
+            "title": "Justd Starter Kit",
+            "package": "justd/laravel",
+            "repo": "justdlabs/laravel"
         }
     ]
 }
