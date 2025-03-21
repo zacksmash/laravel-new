@@ -123,6 +123,11 @@
       "repo": "hostmoz/laravel-bootstrap-starter-kit"
     },
     {
+      "title": "Blade Starter Kit (with FluxUI)",
+      "package": "imacrayon/blade-starter-kit",
+      "repo": "imacrayon/blade-starter-kit"
+    },
+    {
       "title": "Laravel Breeze React Starter Kit",
       "package": "luis-developer-08/breeze-react-jsx-starter-kit",
       "repo": "luis-developer-08/breeze-react-jsx-starter-kit"
