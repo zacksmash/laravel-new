@@ -154,6 +154,11 @@
             "title": "Tabler based Laravel starter kit",
             "package": "santosvilanculos/cuirass",
             "repo": "santosvilanculos/cuirass"
+        },
+        {
+            "title": "Hotwire Starter Kit",
+            "package": "hotwired-laravel/hotwire-starter-kit",
+            "repo": "hotwired-laravel/hotwire-starter-kit"
         }
     ]
 }
