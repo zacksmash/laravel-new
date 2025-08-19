@@ -164,6 +164,11 @@
             "title": "Nuxt UI Starter",
             "package": "stursby/nuxt-ui-starter",
             "repo": "stursby/nuxt-ui-starter"
+        },
+        {
+            "title": "clean af 🧼",
+            "package": "zacksmash/clean-af",
+            "repo": "zacksmash/clean-af"
         }
     ]
 }
